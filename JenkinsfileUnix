@@ -2,7 +2,7 @@ pipeline {
     agent any 
     stages {
         stage('Build') { 
-        git url:https://github.com/Diksha2210/NewMavenProject.git
+        git url: 'https://github.com/Diksha2210/NewMavenProject.git'
             steps {
                 withMaven{
                         sh "mvn clean compile"
